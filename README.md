@@ -1,2 +1,2 @@
-# ProgComp-UFERSA
-Repositório das atividades e trabalhos em C++ na faculdade
+# Computer Prograamming Chair Activities
+Rpository to save exercices using c++
