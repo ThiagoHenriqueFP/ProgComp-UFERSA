@@ -1,0 +1,7 @@
+﻿  Questao3.cpp
+C:\Users\thiag\source\repos\Lab08\Lab08\Questao3.cpp(7,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\thiag\source\repos\Lab08\Lab08\Questao3.cpp(8,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\thiag\source\repos\Lab08\Lab08\Questao3.cpp(9,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\thiag\source\repos\Lab08\Lab08\Questao3.cpp(10,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\thiag\source\repos\Lab08\Lab08\Questao3.cpp(11,18): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Lab08.vcxproj -> C:\Users\thiag\source\repos\Lab08\x64\Debug\Lab08.exe

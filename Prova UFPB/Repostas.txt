@@ -1,0 +1,104 @@
+Questao 1 =======================================================
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(){
+  int rockwell = 50, dureza = 7, tracao = 80000;
+  float q1, q2, q3; //Questao 1, 2 e 3
+  int grau = 7;
+
+  printf("Conteúdo de carbono? ");
+  scanf("%f",&q1);
+  printf("Dureza de Rockwell? ");
+  scanf("%f",&q2);
+  printf("Resistência de tração? ");
+  scanf("%f",&q3);
+
+  if(q1 < dureza)
+    grau +=1;
+
+  if(q2 >= rockwell)
+    grau +=1;
+
+  if(q3 >= tracao)
+    grau +=1;
+
+  printf("Esta amostra de aço possui um grau de = %d", grau);
+}
+
+Questao 2 =======================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  
+  int tipoRadio, quantidadePecas, pecasTipo1 = 0, pecasTipo2 = 0, totalPecas = 0;
+  do {
+    printf("Tipo de Rádio\t\tQuantidade de Peças\n");
+    scanf("%d",&tipoRadio);
+    switch(tipoRadio) {
+      case 1:
+        scanf("%d", &quantidadePecas);
+        totalPecas += quantidadePecas;
+        pecasTipo1 += quantidadePecas;
+        break;
+      case 2:
+        scanf("%d", &quantidadePecas);
+        totalPecas += quantidadePecas;
+        pecasTipo2 += quantidadePecas;
+        break;
+      case 0:
+        printf("Saindo do programa...\n");
+        break;
+      default:
+        printf("Digite o número 1 ou 2\n");
+        break;
+    }
+  }while(tipoRadio!=0);
+
+  printf("Total de peças standard %d\n", pecasTipo1);
+  printf("Total de peças luxo %d\n", pecasTipo2);
+  printf("Total de peças vendidas %d", totalPecas);
+}
+
+Questao 3 =======================================================
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int num1, num2, soma = 0,num[10], count =0;
+  printf("Digite dois numeros:\n");
+  scanf("%d", &num1);
+  scanf("%d", &num2);
+
+  while (num1 / 2 != 1) {
+    if (num1 % 2 == 1) {
+      soma += num2;
+      num[count++] = num2;
+    }
+
+    num1 /= 2;
+    num2 *= 2;
+
+    printf("%d\t%d\n", num1, num2);
+  }
+
+  num1 /= 2;
+  num2 *= 2;
+  if (num1 % 2 == 1) {
+      soma += num2;
+      num[count++] = num2;
+  }
+  printf("%d\t%d\n", num1, num2);
+  printf("Soma: %d(", soma);
+  for(int i = 0; i < count; i++)
+    if(i%2==0) 
+      printf("%d+", num[i]);
+    else
+      printf("%d", num[i]);
+
+    printf(")");
+}
